@@ -1,0 +1,20 @@
+{
+  "light": {
+    "--body-background-color": "#ffffff",
+    "--header-background-color": "#000000",
+    "--text-color": "#ffffff",
+    "--link-color": "#ffffff"
+  },
+  "dark": {
+    "--body-background-color": "#000000",
+    "--header-background-color": "#ffffff",
+    "--text-color": "#000000",
+    "--link-color": "#000000"
+  },
+  "blue": {
+    "--body-background-color": "#e0f7fa",
+    "--header-background-color": "#0288d1",
+    "--text-color": "#0d47a1",
+    "--link-color": "#ffffff"
+  }
+}
