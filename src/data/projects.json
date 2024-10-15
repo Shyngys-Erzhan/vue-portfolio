@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "title": "Pets App",
+    "description": "Design layouts more efficiently by pulling text strings, images, and icons from one palette",
+    "features": [
+      "Register & Login system",
+      "React",
+      "Redux"
+    ],
+    "image": "/src/assets/images/Pets.png"
+  },
+  {
+    "id": "2",
+    "title": "ReactStore",
+    "description": "Track your fitness progress with interactive charts and insights",
+    "features": [
+      "React",
+      "Redux",
+      "Rest Api"
+    ],
+    "image": "/src/assets/images/FinalProject.png"
+  },
+  {
+    "id": "3",
+    "title": "Plants",
+    "description": "An online bookstore with payment integration",
+    "features": [
+      "React",
+      "Redux",
+      "Ant Design"
+    ],
+    "image": "/src/assets/images/Plants.png"
+  },
+  {
+    "id": "4",
+    "title": "Validation",
+    "description": "An online bookstore with payment integration",
+    "features": [
+      "React",
+      "MobX",
+      "TypeScript"
+    ],
+    "image": "/src/assets/images/Validation.png"
+  }
+]

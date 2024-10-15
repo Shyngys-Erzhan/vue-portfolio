@@ -1,11 +1,8 @@
 <script setup>
-import Header from "@/components/Header.vue"; 
 </script>
 
 <template>
   <div id="app">
-    <Header />
-    <p></p>
     <router-view />
   </div>
 </template>
@@ -14,6 +11,7 @@ import Header from "@/components/Header.vue";
 #app {
   width: 1440px;
   color: #333;
+  background-color: var(--app-background-color);
   text-align: center;
   margin: 0 auto;
   padding: 0;
