@@ -1,17 +1,20 @@
 <script setup>
+import Header from "@/components/Header.vue";
 import ProfileSection from "@/pages/Home/ProfileSection.vue";
+import ProjectsGallerySection from "@/pages/Home/ProjectsGallerySection.vue";
+import SkillsSection from "@/pages/Home/SkillsSection.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
   <div>
+    <Header />
     <ProfileSection />
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the home page of the portfolio.</p>
+    <ProjectsGallerySection />
+    <SkillsSection />
+    <Footer />
   </div>
 </template>
 
 <style scoped>
-h1 {
-  color: #007bff;
-}
 </style>

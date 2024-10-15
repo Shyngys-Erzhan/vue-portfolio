@@ -1,0 +1,60 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "percentage": 80
+    },
+    {
+      "name": "CSS",
+      "percentage": 80
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 30
+    },
+    {
+      "name": "TypeScript",
+      "percentage": 40
+    },
+    {
+      "name": "React",
+      "percentage": 40
+    },
+    {
+      "name": "Vue",
+      "percentage": 20
+    },
+    {
+      "name": "Redux",
+      "percentage": 10
+    },
+    {
+      "name": "MobX",
+      "percentage": 10
+    },
+    {
+      "name": "Ant Design",
+      "percentage": 50
+    },
+    {
+      "name": "Tailwind",
+      "percentage": 20
+    },
+    {
+      "name": "Github",
+      "percentage": 30
+    },
+    {
+      "name": "Gitlub",
+      "percentage": 60
+    },
+    {
+      "name": "REST API",
+      "percentage": 70
+    },
+    {
+      "name": "SCSS",
+      "percentage": 80
+    }
+  ]
+}

@@ -23,7 +23,7 @@ onMounted(() => {
       </ul>
     </nav>
     <select @change="(event) => themeStore.setTheme(event.target.value)">
-      <option value="light">Светлая тема</option>
+      <option value="black-and-white">Светлая тема</option>
       <option value="dark">Темная тема</option>
       <option value="blue">Голубая тема</option>
     </select>
@@ -58,7 +58,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--header-link-color);
 }
 
 img:hover {
@@ -71,6 +71,6 @@ a:hover {
 }
 
 .router-link-active {
-  border-bottom: 2px solid var(--link-color);
+  border-bottom: 2px solid var(--header-link-color);
 }
 </style>

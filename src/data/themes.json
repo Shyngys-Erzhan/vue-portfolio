@@ -1,20 +1,44 @@
 {
-  "light": {
-    "--body-background-color": "#ffffff",
-    "--header-background-color": "#000000",
-    "--text-color": "#ffffff",
-    "--link-color": "#ffffff"
+  "black-and-white": {
+    "--body-background-color": "#000000",
+    "--header-background-color": "#adb5bd",
+    "--footer-background-color": "#adb5bd",
+    "--home-profile-background-color": "#ffffff",
+    "--home-project-background-color": "#adb5bd",
+    "--home-text-color": "#ffffff",
+    "--header-link-color": "#fb8b24",
+    "--button-background-color": "#ffffff",
+    "--active-button-background-color": "#70e000",
+    "--button-text-color": "#000000",
+    "--input-border-color": "#000000",
+    "--input-background-color": "#ffffff",
+    "--card-background-color": "#000000",
+    "--card-border-color": "#000000"
   },
   "dark": {
     "--body-background-color": "#000000",
+    "--app-background-color": "#ffffff",
     "--header-background-color": "#ffffff",
-    "--text-color": "#000000",
-    "--link-color": "#000000"
+    "--text-color": "#ffffff",
+    "--link-color": "#ffffff",
+    "--button-background-color": "#ffffff",
+    "--button-text-color": "#000000",
+    "--input-border-color": "#ffffff",
+    "--input-background-color": "#000000",
+    "--card-background-color": "#000000",
+    "--card-border-color": "#ffffff"
   },
   "blue": {
     "--body-background-color": "#e0f7fa",
+    "--app-background-color": "#ffffff",
     "--header-background-color": "#0288d1",
     "--text-color": "#0d47a1",
-    "--link-color": "#ffffff"
+    "--link-color": "#ffffff",
+    "--button-background-color": "#ffffff",
+    "--button-text-color": "#000000",
+    "--input-border-color": "#ffffff",
+    "--input-background-color": "#000000",
+    "--card-background-color": "#000000",
+    "--card-border-color": "#ffffff"
   }
 }

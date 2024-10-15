@@ -1,10 +1,9 @@
-// src/stores/themeStore.js
 import { defineStore } from "pinia";
 import themes from "@/data/themes.json";
 
 export const useThemeStore = defineStore("theme", {
   state: () => ({
-    currentTheme: localStorage.getItem("theme") || "light",
+    currentTheme: localStorage.getItem("theme") || "black-and-white",
   }),
   actions: {
     setTheme(themeName) {
