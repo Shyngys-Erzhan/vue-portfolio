@@ -12,12 +12,13 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color:var(--footer-background-color);
-  color: #333; 
-  font-family: "Arial", sans-serif; 
+  background-color: var(--footer-background-color);
+  color: #333;
+  font-family: "Arial", sans-serif;
 }
 
 .footer p {
   margin: 5px 0;
+  color: var(--footer-text-color);
 }
 </style>

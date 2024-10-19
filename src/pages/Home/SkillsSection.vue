@@ -21,25 +21,31 @@
 
 <script setup>
 import { ref } from "vue";
-import skillsData from "@/data/skills.json"; 
+import skillsData from "@/data/skills.json";
 
 const skills = ref(skillsData.skills);
 
 const getColor = (percentage) => {
-  if (percentage >= 90) return "#28a745"; 
-  if (percentage >= 75) return "#ffc107"; 
-  return "#dc3545"; 
+  if (percentage >= 90) return "#28a745";
+  if (percentage >= 75) return "#ffc107";
+  return "#dc3545";
 };
 </script>
 
 <style scoped>
 .skills-section {
   text-align: center;
-  margin: 40px 0;
+  margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: var(--home-skills-background-color);
 }
-
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  color: var(--home-skills-title-color);
+}
 .skills-container {
   display: flex;
   justify-content: space-around;
@@ -49,7 +55,7 @@ const getColor = (percentage) => {
 
 .skill-item {
   width: 45%;
-  background-color: #f5f5f5;
+  background-color: var(--input-background-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,6 +65,7 @@ const getColor = (percentage) => {
   font-size: 18px;
   margin-bottom: 10px;
   text-align: left;
+  color: var(--input-text-color);
 }
 
 .progress-bar {
@@ -80,5 +87,6 @@ const getColor = (percentage) => {
   text-align: right;
   font-weight: bold;
   margin-top: 5px;
+  color: var(--input-text-color);
 }
 </style>

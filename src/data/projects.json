@@ -42,5 +42,48 @@
       "TypeScript"
     ],
     "image": "/src/assets/images/Validation.png"
+  } ,{
+    "id": "5",
+    "title": "Weather Watch",
+    "description": "Real-time weather updates with location-based customization",
+    "features": [
+      "Weather API Integration",
+      "React",
+      "Tailwind CSS"
+    ],
+    "image": "/src/assets/images/WeatherWatch.png"
+  },
+  {
+    "id": "6",
+    "title": "Foodies Hub",
+    "description": "Discover new recipes and save your favorite dishes",
+    "features": [
+      "Recipe API",
+      "Vue.js",
+      "Pinia"
+    ],
+    "image": "/src/assets/images/FoodiesHub.png"
+  },
+  {
+    "id": "7",
+    "title": "Travel Explore",
+    "description": "Plan your trips and explore the world with ease",
+    "features": [
+      "Travel Booking",
+      "Next.js",
+      "GraphQL"
+    ],
+    "image": "/src/assets/images/TravelExplore.png"
+  },
+  {
+    "id": "8",
+    "title": "Crypto Tracker",
+    "description": "Track cryptocurrency prices and market trends",
+    "features": [
+      "CoinGecko API",
+      "React",
+      "Chart.js"
+    ],
+    "image": "/src/assets/images/CryptoTracker.png"
   }
 ]
