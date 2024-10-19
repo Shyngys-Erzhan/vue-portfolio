@@ -1,9 +1,12 @@
 <script setup>
 import { ref, computed } from "vue";
+import { useRouter } from "vue-router";
+
 import projects from "@/data/projects.json";
 
 const currentPage = ref(1);
 const projectsPerPage = 3;
+const router = useRouter(); 
 
 const paginatedProjects = computed(() => {
   const startIndex = (currentPage.value - 1) * projectsPerPage;
@@ -23,6 +26,9 @@ const prevPage = () => {
   if (currentPage.value > 1) {
     currentPage.value--;
   }
+};
+const goToProjectDetail = (id) => {
+  router.push({ name: "ProjectDetail", params: { id } });
 };
 </script>
 
@@ -45,7 +51,7 @@ const prevPage = () => {
             {{ feature }}
           </li>
         </ul>
-        <button>Подробнее</button>
+        <button @click="goToProjectDetail(project.id)">Подробнее</button>
       </div>
     </div>
 
@@ -68,6 +74,9 @@ const prevPage = () => {
   background-color: var(--home-project-background-color);
 }
 
+h1 {
+  color: var(--home-projects-title-color);
+}
 .projects-container {
   display: flex;
   justify-content: space-between;
@@ -78,14 +87,14 @@ const prevPage = () => {
 .project-card {
   width: 350px;
   min-height: 525px;
-  background: var(--card-background-color);
+  background-color: var(--home-card-background-color);
   padding: 20px;
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.7s;
-  border: 1px solid var(--card-border-color);
+  border: 1px solid var(--home-card-border-color);
 }
 
 img {
@@ -96,21 +105,21 @@ img {
 
 h3 {
   font-family: "Lato", sans-serif;
-  color: var(--home-text-color);
+  color: var(--home-card-text-color);
 }
 
 strong {
   display: flex;
   margin-left: 0;
   font-family: "Lato", sans-serif;
-  color: var(--home-text-color);
+  color: var(--home-card-text-color);
 }
 
 .description {
   width: 300px;
   margin-top: 20px;
   font-family: "Afacad Flux", sans-serif;
-  color: var(--home-text-color);
+  color: var(--home-card-text-color);
 }
 
 ul {
@@ -124,7 +133,7 @@ ul {
 
 li {
   margin-bottom: 10px;
-  color: var(--home-text-color);
+  color: var(--home-card-text-color);
 }
 
 .project-card:hover {
@@ -136,6 +145,7 @@ li {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  align-items: center;
 }
 
 button {
@@ -162,5 +172,10 @@ button:active {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.pagination button {
+  background-color: var(--pagination-button-background-color);
+  color: var(--pagination-button-text-color);
 }
 </style>

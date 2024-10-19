@@ -1,13 +1,31 @@
 <script setup>
 import VueIcon from "@/assets/icons/vue.svg";
 import { useThemeStore } from "@/stores/themeStore";
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
+import themes from "@/data/themes.json";
 
 const themeStore = useThemeStore();
+const themeKeys = ref(Object.keys(themes));
+
+const selectedTheme = ref(
+  localStorage.getItem("selectedTheme") || themeKeys.value[0]
+);
 
 onMounted(() => {
   themeStore.initTheme();
+  themeStore.setTheme(selectedTheme.value);
 });
+
+const handleThemeChange = () => {
+  themeStore.setTheme(selectedTheme.value);
+  localStorage.setItem("selectedTheme", selectedTheme.value);
+};
+
+const formatThemeName = (themeKey) => {
+  return themeKey
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+};
 </script>
 
 <template>
@@ -22,10 +40,10 @@ onMounted(() => {
         <li><router-link to="/contact">Contacts</router-link></li>
       </ul>
     </nav>
-    <select @change="(event) => themeStore.setTheme(event.target.value)">
-      <option value="black-and-white">Светлая тема</option>
-      <option value="dark">Темная тема</option>
-      <option value="blue">Голубая тема</option>
+    <select v-model="selectedTheme" @change="handleThemeChange">
+      <option v-for="theme in themeKeys" :key="theme" :value="theme">
+        {{ formatThemeName(theme) }}
+      </option>
     </select>
   </header>
 </template>
@@ -61,16 +79,34 @@ a {
   color: var(--header-link-color);
 }
 
+a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--header-link-hover-color);
+  transition: width 0.3s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a:hover {
+  color: var(--header-link-hover-color);
+  background-color: var(--header-link-hover-background-color);
+  border: 2px solid var(--header-link-hover-border-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
 img:hover {
   filter: drop-shadow(0 0 20px #42b883);
   transform: scale(1.5);
 }
 
-a:hover {
-  color: var(--hover-color);
-}
-
 .router-link-active {
-  border-bottom: 2px solid var(--header-link-color);
+  border-bottom: 2px solid var(--header-link-hover-color);
 }
 </style>

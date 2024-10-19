@@ -6,8 +6,8 @@
     <div class="divider"></div>
 
     <div class="description">
-      <h1>Shyngys Erzhan</h1>
-      <p><strong>Frontend Developer</strong></p>
+      <h1 class="h1">Shyngys Erzhan</h1>
+      <p class="text"><strong>Frontend Developer</strong></p>
       <a href="../../assets/files/Resume.pdf" download class="download-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +53,13 @@ img {
   width: 2px;
   background-color: red;
 }
-p {
-  font-size: 20px;
+.h1 {
+  font-size: 45px;
+  color: var(--home-profile-text-color);
+}
+.text {
+  font-size: 30px;
+  color: var(--home-profile-text-color);
 }
 .description {
   width: 350px;
@@ -71,7 +76,7 @@ p {
   gap: 5px;
   border-radius: 20px;
   text-decoration: none;
-  background-color: black;
+  background-color: var(--home-profile-download-button-background-color);
   transition: transform 0.7s;
 }
 .icon {

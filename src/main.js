@@ -2,7 +2,6 @@ import {createApp} from "vue";
 import App from "@/App.vue";
 import router from "@/routes/routes";
 import {createPinia} from "pinia";
-import { useThemeStore } from "@/stores/themeStore";
 import "@/assets/styles/normalize.css";
 import "./style.css"
 
