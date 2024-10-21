@@ -6,7 +6,7 @@ import projects from "@/data/projects.json";
 
 const currentPage = ref(1);
 const projectsPerPage = 3;
-const router = useRouter(); 
+const router = useRouter();
 
 const paginatedProjects = computed(() => {
   const startIndex = (currentPage.value - 1) * projectsPerPage;
@@ -123,11 +123,15 @@ strong {
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Создаем 2 колонки одинаковой ширины */
+  gap: 10px; /* Устанавливаем отступы между элементами */
   list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none; /* Убираем круглишки */
+  padding: 10px;
   font-family: "Kalam", sans-serif;
 }
 

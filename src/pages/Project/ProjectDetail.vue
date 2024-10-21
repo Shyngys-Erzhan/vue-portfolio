@@ -7,7 +7,6 @@ const route = useRoute();
 const projectId = ref(route.params.id); 
 const project = ref(null);
 
-// Найдем проект по id
 onMounted(() => {
   project.value = projects.find(proj => proj.id === projectId.value);
 });
@@ -17,7 +16,7 @@ onMounted(() => {
   <div v-if="project" class="project-detail">
     <h1>{{ project.title }}</h1>
     <img :src="project.image" :alt="project.title" />
-    <p>{{ project.description }}</p>
+    <p>{{ project.fullDescription }}</p>
     <strong>Features:</strong>
     <ul>
       <li v-for="(feature, i) in project.features" :key="i">{{ feature }}</li>

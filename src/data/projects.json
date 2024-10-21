@@ -8,18 +8,33 @@
       "React",
       "Redux"
     ],
-    "image": "/src/assets/images/Pets.png"
+    "image": "/src/assets/images/Pets.jpg"
   },
   {
     "id": "2",
     "title": "ReactStore",
     "description": "Track your fitness progress with interactive charts and insights",
+    "fullDescription": "Этот проект представляет собой полностью функциональную платформу для электронной коммерции, предназначенную для демонстрации и продажи товаров различных категорий. В проекте используется React в качестве фронтенд-фреймворка, что позволяет эффективно разрабатывать отзывчивый, компонентный пользовательский интерфейс. С помощью Redux и Redux Toolkit приложение управляет глобальными состояниями, такими как данные корзины, авторизация пользователей и многое другое. Axios используется для обработки API-запросов, что позволяет беспрепятственно взаимодействовать с внешними сервисами для получения и отправки данных. Ant Design предоставляет готовые UI-компоненты, обеспечивая современный и профессиональный вид. Tailwind CSS и другие стили применяются для создания адаптивного дизайна. Формы обрабатываются с помощью Formik и проверяются на валидность через Yup. В проекте также используются библиотеки для загрузки контента, такие как React Content Loader, что улучшает пользовательский опыт при ожидании загрузки данных.",
     "features": [
       "React",
       "Redux",
-      "Rest Api"
+      "Rest Api",
+      "React Router Dom",
+      "Redux и Redux Toolkit",
+      "Ant Design",
+      "Axios",
+      "Formik",
+      "Yup",
+      "React Icons",
+      "Tailwind CSS",
+      "Vite"
     ],
-    "image": "/src/assets/images/FinalProject.png"
+    "image": "/src/assets/images/FinalProject/FinalProject.jpg",
+    "images": [
+      "../assets/images/FinalProject/FinalProject1.jpg",
+      "../assets/images/FinalProject/FinalProject2.jpg",
+      "../assets/images/FinalProject/FinalProject3.jpg"
+    ]
   },
   {
     "id": "3",
@@ -30,7 +45,7 @@
       "Redux",
       "Ant Design"
     ],
-    "image": "/src/assets/images/Plants.png"
+    "image": "/src/assets/images/Plants.jpg"
   },
   {
     "id": "4",
@@ -41,49 +56,17 @@
       "MobX",
       "TypeScript"
     ],
-    "image": "/src/assets/images/Validation.png"
-  } ,{
+    "image": "/src/assets/images/Validation.jpg"
+  },
+  {
     "id": "5",
-    "title": "Weather Watch",
+    "title": "SmartContracts",
     "description": "Real-time weather updates with location-based customization",
     "features": [
       "Weather API Integration",
       "React",
       "Tailwind CSS"
     ],
-    "image": "/src/assets/images/WeatherWatch.png"
-  },
-  {
-    "id": "6",
-    "title": "Foodies Hub",
-    "description": "Discover new recipes and save your favorite dishes",
-    "features": [
-      "Recipe API",
-      "Vue.js",
-      "Pinia"
-    ],
-    "image": "/src/assets/images/FoodiesHub.png"
-  },
-  {
-    "id": "7",
-    "title": "Travel Explore",
-    "description": "Plan your trips and explore the world with ease",
-    "features": [
-      "Travel Booking",
-      "Next.js",
-      "GraphQL"
-    ],
-    "image": "/src/assets/images/TravelExplore.png"
-  },
-  {
-    "id": "8",
-    "title": "Crypto Tracker",
-    "description": "Track cryptocurrency prices and market trends",
-    "features": [
-      "CoinGecko API",
-      "React",
-      "Chart.js"
-    ],
-    "image": "/src/assets/images/CryptoTracker.png"
+    "image": "/src/assets/images/SmartContracts.jpg"
   }
 ]
